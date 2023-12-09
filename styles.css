@@ -22,6 +22,10 @@
 .avatar {
     width: 300px;
 }
-.main-container div {
+.main-container .main-item {
     padding: 10px;
+    border: solid 1px #3A4F50;
+}
+a {
+    color: #F4FEFD;
 }
