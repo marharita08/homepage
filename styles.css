@@ -133,7 +133,6 @@ aside button a {
     display: flex;
 }
 .contact-info-item a {
-    text-decoration: none;
     color: #F4FEFD;
 }
 .contact-info, .skills-col {
@@ -147,4 +146,15 @@ aside button a {
 .skills {
     display: flex;
     gap: 20px;
+}
+.icons {
+    display: flex;
+}
+.main-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+a {
+    text-decoration: none;
 }
