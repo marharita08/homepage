@@ -1,13 +1,13 @@
 .resume-container {
-    #background-color: #3A4F50;
     background-color: #1B2223;
     color: #F4FEFD;
     display: flex;
-    flex-direction: row;
-    padding: 0 200px;
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
 }
 .aside-container {
-    #background-color: #1B2223;
     background-color: #3A4F50;
     padding: 5px;
     width: 300px;
@@ -15,7 +15,6 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
     gap: 10px;
     width: 100%;
 }
@@ -58,10 +57,11 @@ main a {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #0e0e0e;
     transform: translateY(calc(-50px - 50%));
     z-index: 1;
     transition: 0.5s ease-in-out;
+    background-color: var(--color);
+    box-shadow: 0 0 10px var(--color), 0 0 30px var(--color);
 }
 .button .light {
     position: absolute;
@@ -72,7 +72,6 @@ main a {
     pointer-events: none;
     transition: .5s ease-in-out;
     transition-delay: .1s;
-    opacity: 0;
 }
 .button button {
     cursor: pointer;
@@ -102,13 +101,7 @@ main a {
 .button:nth-child(4) .light {
     background: linear-gradient(180deg, var(--color), #f0515450, #f0515400);
 }
-.button:hover .light {
-    opacity: 1;
-}
-.button:hover .dot {
-    background-color: var(--color);
-    box-shadow: 0 0 10px var(--color), 0 0 30px var(--color);
-}
+
 .button:hover button a {
     color: var(--color);
 }
@@ -119,11 +112,15 @@ aside button a {
     transition-delay: 0.25s;
 }
 .button button a {
+    text-decoration: none;
+    transition: .5s ease-in-out;
+    transition-delay: 0.25s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    color: var(--color);
 }
 .icon-container {
     margin-right: 5px;
@@ -157,4 +154,38 @@ aside button a {
 }
 a {
     text-decoration: none;
+}
+@media screen and (min-width: 600px) {
+    .resume-container {
+        flex-direction: row;
+        padding: 0 10px;
+        align-items: normal;
+    }
+}
+@media screen and (min-width: 768px) {
+    .button .light {
+        opacity: 0;
+    }
+    .button:hover .light {
+        opacity: 1;
+    }
+    .button .dot {
+        background: #0e0e0e;
+        box-shadow: none;
+    }
+    .button:hover .dot {
+        background-color: var(--color);
+        box-shadow: 0 0 10px var(--color), 0 0 30px var(--color);
+    }
+    .button button a {
+        color: #0e0e0e;
+    }
+    .button:hover button a {
+        color: var(--color);
+    }
+}
+@media screen and (min-width: 992px) {
+    .resume-container {
+        padding: 0 10%;
+    }
 }
