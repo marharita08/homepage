@@ -129,16 +129,22 @@ aside button a {
     margin-right: 5px;
     width: 20px;
 }
-.contact-info-item {
+.contact-info-item, .skills-item, .icon-text-container {
     display: flex;
 }
 .contact-info-item a {
     text-decoration: none;
     color: #F4FEFD;
 }
-.contact-info {
+.contact-info, .skills-col {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+.contact-info {
     margin-bottom: 20px;
+}
+.skills {
+    display: flex;
+    gap: 20px;
 }
