@@ -1,3 +1,6 @@
+
+/* General styles */
+
 body {
   background-color: #1B2223;
   color: #F4FEFD;
@@ -14,12 +17,60 @@ body {
   padding: 5px;
   width: 300px;
 }
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
 .avatar {
   width: 300px;
 }
-.main-container {
-  width: 100%;
-
+.main-container .main-item {
+  padding: 10px;
+  border: solid 1px #3A4F50;
+}
+hr {
+  border-color: #3A4F50;
+}
+main a {
+  color: #F4FEFD;
+}
+.contact-info-item a:hover, a:hover {
+  color: #5CD2C6;
+}
+.icon-container {
+  margin-right: 5px;
+  width: 20px;
+}
+.contact-info-item, .skills-item, .icon-text-container {
+  display: flex;
+}
+.contact-info-item a {
+  color: #F4FEFD;
+}
+.contact-info, .skills-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contact-info {
+  margin-bottom: 20px;
+}
+.skills {
+  display: flex;
+  gap: 20px;
+}
+.icons {
+  display: flex;
+}
+.main-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 600px) {
@@ -35,3 +86,4 @@ body {
     padding: 0 10%;
   }
 }
+
