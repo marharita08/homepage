@@ -1,10 +1,410 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Résumé</title>
+  <meta charset="UTF-8"/>
+  <title>Résumé</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="https://kit.fontawesome.com/11465bc8fc.js" crossorigin="anonymous"></script>
+  <link type="image/png" sizes="16x16" rel="icon" href="assets/icon.png">
 </head>
-<body>
-― Hello World! &#x1F609;
+<body class="resume-container">
+<aside class="aside-container">
+  <h2>Marharyta Rozghon</h2>
+  <h3>JavaScript Developer</h3>
+  <img src="assets/avatar.png" alt="avatar" class="avatar"/>
+  <h3>Contact info</h3>
+  <div class="contact-info">
+    <div class="contact-info-item">
+      <div class="icon-container"><i class="fa-solid fa-location-dot"></i></div>
+      <span>Stepanivka, Sumy region, Ukraine</span>
+    </div>
+    <div class="contact-info-item">
+      <div class="icon-container"><i class="fa-solid fa-envelope"></i></div>
+      <a href="mailto:rozgon.margarita08@gmail.com" target="_blank">rozgon.margarita08@gmail.com</a>
+    </div>
+    <div class="contact-info-item">
+      <div class="icon-container"><i class="fa-solid fa-phone"></i></div>
+      <span>+380990296250</span>
+    </div>
+  </div>
+
+  <div class="social-networks-container">
+    <div class="bar"></div>
+    <div class="button-container">
+      <div class="button" id="button-linkedin">
+        <div class="switch__wrapper">
+          <label class="switch">
+            <input class="switch__input" type="checkbox" role="switch" id="switch-linkedin"/>
+            <span class="switch__base-outer"></span>
+            <span class="switch__base-inner"></span>
+            <svg class="switch__base-neon" viewBox="0 0 40 24" width="40px" height="24px">
+              <defs>
+                <filter id="switch-glow">
+                  <feGaussianBlur result="coloredBlur" stdDeviation="1"></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="coloredBlur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+                <linearGradient id="switch-gradient1" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="hsl(var(--on-hue1),90%,70%)"/>
+                  <stop offset="100%" stop-color="hsl(var(--on-hue2),90%,70%)"/>
+                </linearGradient>
+                <linearGradient id="switch-gradient2" x1="0.7" y1="0" x2="0.3" y2="1">
+                  <stop offset="25%" stop-color="hsla(var(--on-hue1),90%,70%,0)"/>
+                  <stop offset="50%" stop-color="hsla(var(--on-hue1),90%,70%,0.3)"/>
+                  <stop offset="100%" stop-color="hsla(var(--on-hue2),90%,70%,0.3)"/>
+                </linearGradient>
+              </defs>
+              <path fill="none" filter="url(#switch-glow)" stroke="url(#switch-gradient1)" stroke-width="1"
+                    stroke-dasharray="0 104.26 0" stroke-dashoffset="0.01" stroke-linecap="round"
+                    d="m.5,12C.5,5.649,5.649.5,12,.5h16c6.351,0,11.5,5.149,11.5,11.5s-5.149,11.5-11.5,11.5H12C5.649,23.5.5,18.351.5,12Z"/>
+            </svg>
+            <span class="switch__knob-shadow"></span>
+            <span class="switch__knob-container">
+              <span class="switch__knob">
+                <svg class="switch__knob-neon" viewBox="0 0 48 48" width="38px" height="38px">
+                  <circle fill="none" stroke="url(#switch-gradient2)" stroke-dasharray="0 90.32 0 54.19"
+                          stroke-linecap="round" stroke-width="1" r="23" cx="24" cy="24"
+                          transform="rotate(-112.5,24,24)"/>
+                </svg>
+              </span>
+	          </span>
+            <span class="switch__led"></span>
+            <span class="switch__text">Power</span>
+          </label>
+        </div>
+        <div class="dot"></div>
+        <div class="light"></div>
+        <button>
+          <a href="https://www.linkedin.com/in/marharyta08" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </button>
+      </div>
+      <div class="button" id="button-github">
+        <div class="switch__wrapper">
+          <label class="switch">
+            <input class="switch__input" type="checkbox" role="switch" id="switch-github"/>
+            <span class="switch__base-outer"></span>
+            <span class="switch__base-inner"></span>
+            <svg class="switch__base-neon" viewBox="0 0 40 24" width="40px" height="24px">
+              <defs>
+                <filter id="switch-glow">
+                  <feGaussianBlur result="coloredBlur" stdDeviation="1"></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="coloredBlur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+                <linearGradient id="switch-gradient1" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="hsl(var(--on-hue1),90%,70%)"/>
+                  <stop offset="100%" stop-color="hsl(var(--on-hue2),90%,70%)"/>
+                </linearGradient>
+                <linearGradient id="switch-gradient2" x1="0.7" y1="0" x2="0.3" y2="1">
+                  <stop offset="25%" stop-color="hsla(var(--on-hue1),90%,70%,0)"/>
+                  <stop offset="50%" stop-color="hsla(var(--on-hue1),90%,70%,0.3)"/>
+                  <stop offset="100%" stop-color="hsla(var(--on-hue2),90%,70%,0.3)"/>
+                </linearGradient>
+              </defs>
+              <path fill="none" filter="url(#switch-glow)" stroke="url(#switch-gradient1)" stroke-width="1"
+                    stroke-dasharray="0 104.26 0" stroke-dashoffset="0.01" stroke-linecap="round"
+                    d="m.5,12C.5,5.649,5.649.5,12,.5h16c6.351,0,11.5,5.149,11.5,11.5s-5.149,11.5-11.5,11.5H12C5.649,23.5.5,18.351.5,12Z"/>
+            </svg>
+            <span class="switch__knob-shadow"></span>
+            <span class="switch__knob-container">
+              <span class="switch__knob">
+                <svg class="switch__knob-neon" viewBox="0 0 48 48" width="38px" height="38px">
+                  <circle fill="none" stroke="url(#switch-gradient2)" stroke-dasharray="0 90.32 0 54.19"
+                          stroke-linecap="round" stroke-width="1" r="23" cx="24" cy="24"
+                          transform="rotate(-112.5,24,24)"/>
+                </svg>
+              </span>
+	          </span>
+            <span class="switch__led"></span>
+            <span class="switch__text">Power</span>
+          </label>
+        </div>
+        <div class="dot"></div>
+        <div class="light"></div>
+        <button>
+          <a href="https://github.com/marharita08" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </button>
+      </div>
+      <div class="button" id="button-telegram">
+        <div class="switch__wrapper">
+          <label class="switch">
+            <input class="switch__input" type="checkbox" role="switch" id="switch-telegram"/>
+            <span class="switch__base-outer"></span>
+            <span class="switch__base-inner"></span>
+            <svg class="switch__base-neon" viewBox="0 0 40 24" width="40px" height="24px">
+              <defs>
+                <filter id="switch-glow">
+                  <feGaussianBlur result="coloredBlur" stdDeviation="1"></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="coloredBlur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+                <linearGradient id="switch-gradient1" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="hsl(var(--on-hue1),90%,70%)"/>
+                  <stop offset="100%" stop-color="hsl(var(--on-hue2),90%,70%)"/>
+                </linearGradient>
+                <linearGradient id="switch-gradient2" x1="0.7" y1="0" x2="0.3" y2="1">
+                  <stop offset="25%" stop-color="hsla(var(--on-hue1),90%,70%,0)"/>
+                  <stop offset="50%" stop-color="hsla(var(--on-hue1),90%,70%,0.3)"/>
+                  <stop offset="100%" stop-color="hsla(var(--on-hue2),90%,70%,0.3)"/>
+                </linearGradient>
+              </defs>
+              <path fill="none" filter="url(#switch-glow)" stroke="url(#switch-gradient1)" stroke-width="1"
+                    stroke-dasharray="0 104.26 0" stroke-dashoffset="0.01" stroke-linecap="round"
+                    d="m.5,12C.5,5.649,5.649.5,12,.5h16c6.351,0,11.5,5.149,11.5,11.5s-5.149,11.5-11.5,11.5H12C5.649,23.5.5,18.351.5,12Z"/>
+            </svg>
+            <span class="switch__knob-shadow"></span>
+            <span class="switch__knob-container">
+              <span class="switch__knob">
+                <svg class="switch__knob-neon" viewBox="0 0 48 48" width="38px" height="38px">
+                  <circle fill="none" stroke="url(#switch-gradient2)" stroke-dasharray="0 90.32 0 54.19"
+                          stroke-linecap="round" stroke-width="1" r="23" cx="24" cy="24"
+                          transform="rotate(-112.5,24,24)"/>
+                </svg>
+              </span>
+	          </span>
+            <span class="switch__led"></span>
+            <span class="switch__text">Power</span>
+          </label>
+        </div>
+        <div class="dot"></div>
+        <div class="light"></div>
+        <button>
+          <a href="https://t.me/Marharyta_Rozghon" target="_blank">
+            <i class="fa-brands fa-telegram"></i>
+            <span>Telegram</span>
+          </a>
+        </button>
+      </div>
+      <div class="button" id="button-bitbucket">
+        <div class="switch__wrapper">
+          <label class="switch">
+            <input class="switch__input" type="checkbox" role="switch" id="switch-bitbucket"/>
+            <span class="switch__base-outer"></span>
+            <span class="switch__base-inner"></span>
+            <svg class="switch__base-neon" viewBox="0 0 40 24" width="40px" height="24px">
+              <defs>
+                <filter id="switch-glow">
+                  <feGaussianBlur result="coloredBlur" stdDeviation="1"></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="coloredBlur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+                <linearGradient id="switch-gradient1" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="hsl(var(--on-hue1),90%,70%)"/>
+                  <stop offset="100%" stop-color="hsl(var(--on-hue2),90%,70%)"/>
+                </linearGradient>
+                <linearGradient id="switch-gradient2" x1="0.7" y1="0" x2="0.3" y2="1">
+                  <stop offset="25%" stop-color="hsla(var(--on-hue1),90%,70%,0)"/>
+                  <stop offset="50%" stop-color="hsla(var(--on-hue1),90%,70%,0.3)"/>
+                  <stop offset="100%" stop-color="hsla(var(--on-hue2),90%,70%,0.3)"/>
+                </linearGradient>
+              </defs>
+              <path fill="none" filter="url(#switch-glow)" stroke="url(#switch-gradient1)" stroke-width="1"
+                    stroke-dasharray="0 104.26 0" stroke-dashoffset="0.01" stroke-linecap="round"
+                    d="m.5,12C.5,5.649,5.649.5,12,.5h16c6.351,0,11.5,5.149,11.5,11.5s-5.149,11.5-11.5,11.5H12C5.649,23.5.5,18.351.5,12Z"/>
+            </svg>
+            <span class="switch__knob-shadow"></span>
+            <span class="switch__knob-container">
+              <span class="switch__knob">
+                <svg class="switch__knob-neon" viewBox="0 0 48 48" width="38px" height="38px">
+                  <circle fill="none" stroke="url(#switch-gradient2)" stroke-dasharray="0 90.32 0 54.19"
+                          stroke-linecap="round" stroke-width="1" r="23" cx="24" cy="24"
+                          transform="rotate(-112.5,24,24)"/>
+                </svg>
+              </span>
+	          </span>
+            <span class="switch__led"></span>
+            <span class="switch__text">Power</span>
+          </label>
+        </div>
+        <div class="dot"></div>
+        <div class="light"></div>
+        <button>
+          <a href="https://bitbucket.org/marharyta08" target="_blank">
+            <i class="fa-brands fa-bitbucket"></i>
+            <span>Bitbucket</span>
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <h3>Skills</h3>
+  <div class="skills">
+    <div class="skills-col">
+      <div class="skills-item">
+        <div class="icon-container"><i class="fa-brands fa-html5"></i></div>
+        <span>HTML</span>
+      </div>
+      <div class="skills-item">
+        <div class="icon-container"><i class="fa-brands fa-css3-alt"></i></div>
+        <span>CSS</span>
+      </div>
+      <div class="skills-item">
+        <div class="icon-container"><i class="fa-brands fa-js"></i></div>
+        <span>JavaScript</span>
+      </div>
+      <div class="skills-item">
+        <div class="icon-container"><i class="fa-brands fa-react"></i></div>
+        <span>React</span>
+      </div>
+    </div>
+    <div class="skills-col">
+      <div class="skills-item">
+        <div class="icon-container"><i class="fa-brands fa-node-js"></i></div>
+        <span>Express</span>
+      </div>
+      <div class="skills-item">
+        <div class="icon-container">ts</div>
+        <span>TypeScript</span>
+      </div>
+      <div class="skills-item">
+        <div class="icon-container"><i class="fa-brands fa-git-alt"></i></div>
+        <span>Git</span>
+      </div>
+      <div class="skills-item">
+        <div class="icon-container"><i class="fa-solid fa-database"></i></div>
+        <span>PostgreSQL</span>
+      </div>
+    </div>
+  </div>
+  <h3>Languages</h3>
+  <div>Ukrainian - native</div>
+  <div>English - B2</div>
+</aside>
+<main class="main-container">
+  <div class="main-item">
+    <h3>Summary</h3>
+    <hr/>
+    I hold a Master's and a Bachelor's degree in Computer Science, both obtained from Sumy State University.
+    I am interested in web development.
+    I started studying it at university, continued learning through courses, and am still learning independently.
+    I enjoy development. Working with code brings me joy and fulfillment.
+    I have a desire to improve my skills as a developer and gain experience working in a team.
+    I am open to new opportunities and challenges.
+  </div>
+  <div class="main-item">
+    <h3>Education</h3>
+    <hr/>
+    <div>
+      <div>
+        <h4>Master of Computer Sciences (Information Technologies of Design)</h4>
+        <div class="main-item-content">
+          <div><a href="https://sumdu.edu.ua/uk/" target="_blank">Sumy State University</a></div>
+          <div class="icon-text-container">
+            <div class="icon-container"><i class="fa-regular fa-calendar"></i></div>
+            <span>01/10/2022 – 31/05/2024</span>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div>
+        <h4>Bachelor of Computer Sciences (Informatics)</h4>
+        <div class="main-item-content">
+          <div><a href="https://sumdu.edu.ua/uk/" target="_blank">Sumy State University</a></div>
+          <div class="icon-text-container">
+            <div class="icon-container"><i class="fa-regular fa-calendar"></i></div>
+            <span>01/09/2018 – 30/06/2022</span>
+          </div>
+          <div>
+            <div class="icons">
+              <div class="icon-container"><i class="fa-brands fa-html5"></i></div>
+              <div class="icon-container"><i class="fa-brands fa-css3-alt"></i></div>
+              <div class="icon-container"><i class="fa-brands fa-js"></i></div>
+              <div class="icon-container"><i class="fa-brands fa-git-alt"></i></div>
+              <div class="icon-container"><i class="fa-solid fa-database"></i></div>
+            </div>
+          </div>
+          <div>
+            <a href="https://drive.google.com/file/d/10N9RYL0K_2__duFIENx6bEYdYHxs7Pvz/view?usp=sharing"
+               target="_blank">
+              Diploma link
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-item">
+    <h3>Certificates</h3>
+    <hr/>
+    <div>
+      <h4>MindK Dev Camp</h4>
+      <div class="main-item-content">
+        <div><a href="https://www.mindk.com">MindK</a>, <a href="https://sumdu.edu.ua/uk/" target="_blank">Sumy State University</a></div>
+        <div class="icon-text-container">
+          <div class="icon-container"><i class="fa-regular fa-calendar"></i></div>
+          <span>16/11/2021 – 23/02/2022; 01/07/2022 – 10/08/2022</span>
+        </div>
+        <div class="icons">
+          <div class="icon-container"><i class="fa-brands fa-react"></i></div>
+          <div class="icon-container"><i class="fa-brands fa-node-js"></i></div>
+          <div class="icon-container"><i class="fa-brands fa-git-alt"></i></div>
+          <div class="icon-container"><i class="fa-solid fa-database"></i></div>
+        </div>
+        <div>
+          <a href="https://drive.google.com/file/d/1HTqHBDqZH_yYAWA7J5oFp4VEmKZgvmZz/view?usp=sharing"
+             target="_blank">
+            Certificate link
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-item">
+    <h3>Projects</h3>
+    <hr/>
+    <div>
+      <div>
+        <h4>SoNet</h4>
+        <div class="main-item-content">
+          <div class="icon-text-container">
+            <div class="icon-container"><i class="fa-regular fa-calendar"></i></div>
+            <span>11/2021 – Current</span>
+          </div>
+          <div>Prototype of a social network allows posting, liking, commenting, friendship with other users.
+          </div>
+          <div class="icons">
+            <div class="icon-container"><i class="fa-brands fa-react"></i></div>
+            <div class="icon-container"><i class="fa-brands fa-node-js"></i></div>
+            <div class="icon-container"><i class="fa-solid fa-database"></i></div>
+          </div>
+          <div><a href="https://github.com/marharita08/SoNet" target="_blank">GitHub link</a></div>
+        </div>
+      </div>
+      <hr/>
+      <div>
+        <h4>PasswordChecker</h4>
+        <div class="main-item-content">
+          <div class="icon-text-container">
+            <div class="icon-container"><i class="fa-regular fa-calendar"></i></div>
+            <span>21/07/2023 – 26/07/2023</span>
+          </div>
+          <div>PasswordChecker is an Angular application designed to assess the strength of passwords.</div>
+          <div class="icons">
+            <div class="icon-container"><i class="fa-brands fa-angular"></i></div>
+            <div class="icon-container">ts</div>
+          </div>
+          <div><a href="https://marharita08.github.io/PasswordChecker/" target="_blank">App link</a></div>
+          <div><a href="https://github.com/marharita08/PasswordChecker" target="_blank">GitHub link</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
