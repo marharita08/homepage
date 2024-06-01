@@ -221,6 +221,7 @@ aside button a {
   position: relative;
   width: 3.75em;
   height: 2.25em;
+  cursor: pointer;
 }
 .switch__base-outer,
 .switch__base-inner {
